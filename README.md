@@ -9,7 +9,7 @@ The restaking tool doesn't require hmy - it's entirely standalone.
 ## Installation
 
 ```
-rm -rf harmony-restaker && harmony-restaker && cd harmony-restaker
+rm -rf harmony-restaker && mkdir -p harmony-restaker && cd harmony-restaker
 bash <(curl -s -S -L https://raw.githubusercontent.com/SebastianJ/harmony-restaker/master/scripts/install.sh)
 ```
 
