@@ -2,8 +2,6 @@ module github.com/SebastianJ/harmony-restaker
 
 go 1.14
 
-replace github.com/harmony-one/go-lib => /Users/sebastianjohnsson/Programming/Golang/src/github.com/harmony-one/go-lib
-
 require (
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
 	github.com/gookit/color v1.2.4
