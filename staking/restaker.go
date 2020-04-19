@@ -35,7 +35,7 @@ func Restake() error {
 		}
 	}
 
-	logger.BalanceLog(fmt.Sprintf("Waiting %d seconds for balance to get updated", config.Configuration.Network.Retry.Wait))
+	logger.BalanceLog(fmt.Sprintf("Waiting %d seconds for the balance to get updated", config.Configuration.Network.Retry.Wait))
 	time.Sleep(time.Second * time.Duration(config.Configuration.Network.Retry.Wait))
 
 	logger.BalanceLog(fmt.Sprintf("Checking balance for address %s", config.Configuration.Account.Address))
@@ -73,7 +73,7 @@ func Restake() error {
 		}
 	}
 
-	logger.BalanceLog(fmt.Sprintf("Waiting %d seconds for balance to get updated after delegating", config.Configuration.Network.Retry.Wait))
+	logger.BalanceLog(fmt.Sprintf("Waiting %d seconds for the balance to get updated after delegating", config.Configuration.Network.Retry.Wait))
 	time.Sleep(time.Second * time.Duration(config.Configuration.Network.Retry.Wait))
 
 	balance, err = config.Configuration.Network.API.GetShardBalance(config.Configuration.Account.Address, 0)
